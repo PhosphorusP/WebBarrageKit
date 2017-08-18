@@ -1,4 +1,4 @@
 # WebBarrageKit #
-------
-## A Faster Way To Show/Send Bsttshr On Your Page ##
-___Code By PhosphorusP___
+
+__A Faster Way To Show/Send Bsttshr On Your Page__
+_Code By PhosphorusP_
