@@ -1,0 +1,25 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Manage</title>
+<style>
+input {
+	float:left;
+}
+</style>
+<script>
+var s=setInterval("document.getElementById('deleteall').disabled=true;document.getElementById('sure').disabled=false;",5000);
+</script>
+</head>
+<body onLoad="document.getElementById('deleteall').disabled=true;document.getElementById('sure').disabled=false;">
+<h1>Data Visualization</h1>
+<input type="button" onClick="alert('<?php echo file_get_contents("test.txt"); ?>');document.getElementById('deleteall').disabled=true;document.getElementById('sure').disabled=false;" value="Check All Barrages">
+<br />
+<h1>Operation</h1>
+<form action="deleteall.php" method="post" id="sendbarrage">
+<input type="submit" value="Delete All Barrages" class="button" disabled id="deleteall">
+</form>
+<input type="button" value="I'M SURE TO DO THAT" onclick="document.getElementById('deleteall').disabled=false;this.disabled=true" id="sure">
+</body>
+</html>
