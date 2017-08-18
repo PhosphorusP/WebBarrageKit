@@ -162,6 +162,7 @@
 		}
 		f_ghost {
 			text-shadow: 0 0 0.2em #FFF;
+			color: #FFF;
 		}
 		f_reverse {
 			display: inline-block;
