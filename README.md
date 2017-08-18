@@ -1,3 +1,4 @@
-# WebBarrageKit
-# A Faster Way To Show/Send Barrage On Your Page
-Code By PhosphorusP
+# WebBarrageKit #
+
+__A Faster Way To Show/Send Bsttshr On Your Page__  
+_Code By PhosphorusP_
