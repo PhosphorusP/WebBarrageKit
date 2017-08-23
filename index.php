@@ -59,63 +59,6 @@
 			float: left;
 			margin: auto;
 		}
-		.palette {
-			display: none;
-		}
-		.palette + label {
-			width: 1em;
-			height: 1em;
-			border-radius: 0.5em;
-			transition-delay: 0s;
-			transition-duration: 0.125s;
-			opacity: 1;
-			font-size: 1em;
-		}
-		.pad {
-			z-index: 999;
-		}
-		.palette[c=black] + label {
-			background: linear-gradient(#888,#000) #000;
-		}
-		.palette[c=black]:hover + label,.palette[c=black]:checked + label {
-			box-shadow: 0 0 0.2em #000 inset, 0 0 1em #000;
-		}
-		.palette[c=red] + label {
-			background: linear-gradient(#F00,#B00) #F00;
-		}
-		.palette[c=red]:hover + label,.palette[c=red]:checked + label {
-			box-shadow: 0 0 0.2em #000 inset, 0 0 1em #F00;
-		}
-		.palette[c=green] + label {
-			background: linear-gradient(#0F0,#0B0) #0F0;
-		}
-		.palette[c=green]:hover + label,.palette[c=green]:checked + label {
-			box-shadow: 0 0 0.2em #000 inset, 0 0 1em #0F0;
-		}
-		.palette[c=blue] + label {
-			background: linear-gradient(#0EF,#0AB) #0EF;
-		}
-		.palette[c=blue]:hover + label,.palette[c=blue]:checked + label {
-			box-shadow: 0 0 0.2em #000 inset, 0 0 1em #0EF;
-		}
-		.palette[c=yellow] + label {
-			background: linear-gradient(#FF0,#BB0) #FF0;
-		}
-		.palette[c=yellow]:hover + label,.palette[c=yellow]:checked + label {
-			box-shadow: 0 0 0.2em #000 inset, 0 0 1em #FF0;
-		}
-		.palette[c=orange] + label {
-			background: linear-gradient(#F60,#B30) #F60;
-		}
-		.palette[c=orange]:hover + label,.palette[c=orange]:checked + label {
-			box-shadow: 0 0 0.2em #000 inset, 0 0 1em #F60;
-		}
-		.palette[c=pink] + label {
-			background: linear-gradient(#F0F,#B0B) #F0F;
-		}
-		.palette[c=pink]:hover + label,.palette[c=pink]:checked + label {
-			box-shadow: 0 0 0.2em #000 inset, 0 0 1em #F0F;
-		}
 		@keyframes barrage {
 			from {
 				left: 110%;
