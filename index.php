@@ -245,7 +245,7 @@
 </head>
 <body id="body">
 		<form action="<?php if(strtr($_POST["barrage"], array(' '=>'')))file_put_contents("test.txt",strtr($_POST["temp"], array(' '=>'　')),FILE_APPEND);if(strtr($_POST["barrage"], array(' '=>'')))file_put_contents("test.txt"," ",FILE_APPEND); ?>" method="post" id="sendbarrage">
-		<input onChange="ref()" type="text" name="barrage" placeholder="Say something..." class="txtfield" id="bge" maxlength="16">
+		<input onBlur="ref()" onChange="ref()" type="text" name="barrage" placeholder="Say something..." class="txtfield" id="bge" maxlength="16">
 		<input type="text" name="temp" class="txtfield" id="tmp" hidden>
 		<input type="submit" value="Send" class="button" id="snd">
 	</form>
