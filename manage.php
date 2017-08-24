@@ -21,9 +21,5 @@ var s=setInterval("document.getElementById('deleteall').disabled=true;document.g
 <input type="submit" value="Delete All Barrages" class="button" disabled id="deleteall">
 </form>
 <input type="button" value="I'M SURE TO DO THAT" onclick="document.getElementById('deleteall').disabled=false;this.disabled=true" id="sure">
-<br><br><br><br><br><br><br><br>
-<form action="index.php" method="post" id="Index">
-<input type="submit" value="Back to index.php" class="button" id="backtohome">
-</form>
 </body>
 </html>
