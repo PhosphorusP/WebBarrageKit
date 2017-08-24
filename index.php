@@ -271,7 +271,7 @@
 			var bd = document.getElementById( "body" );
 			var x = Math.random() * 5 + 10;
 			var y = Math.random() * (window.innerHeight-32)
-			bd.innerHTML += '<div class="barrage" id="b" style="top:' + y + 'px;animation-duration:' + x + 's;animation-delay:' + Math.random() * 5 + 's;">' + str + '</div>';
+			bd.innerHTML += '<div class="barrage" id="b" style="top:' + y + 'px;left:110%;animation-duration:' + x + 's;animation-delay:' + Math.random() * 5 + 's;">' + str + '</div>';
 			console.log( 'done:'+ str );
 		}
 		function aaa() {
