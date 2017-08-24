@@ -25,6 +25,7 @@
 			border: none;
 		}	
 		.barrage {
+			animation-fill-mode: forwards;
 			position: fixed;
 			animation: barrage 10s infinite linear;
 			top: 8em;
@@ -56,7 +57,7 @@
 			height:1em;
 			opacity:1;
 			padding: 0.5em;
-			float: left;
+			float: none;
 			margin: auto;
 		}
 		.palette {
@@ -122,7 +123,7 @@
 				opacity: 1;
 			}
 			to {
-				left: -50%;
+				left: -100%;
 				opacity: 1;
 			}
 		}
@@ -302,7 +303,7 @@
 </head>
 <body id="body">
 		<form action="<?php if(strtr($_POST["barrage"], array(' '=>'')))file_put_contents("test.txt",strtr($_POST["temp"], array(' '=>'　')),FILE_APPEND);if(strtr($_POST["barrage"], array(' '=>'')))file_put_contents("test.txt"," ",FILE_APPEND); ?>" method="post" id="sendbarrage">
-		<input onBlur="ref()" onChange="ref()" type="text" name="barrage" placeholder="Say something..." class="txtfield" id="bge" maxlength="16">
+		<input onBlur="ref()" onChange="ref()" type="text" name="barrage" placeholder="Say something..." class="txtfield" id="bge" maxlength="32">
 		<input type="text" name="temp" class="txtfield" id="tmp" hidden>
 		<input type="submit" value="Send" class="button" id="snd">
 	</form>
@@ -325,7 +326,6 @@
 	<label for="c_pink">　</label>
 	</form>
 </div>
-
 <div class="panel">
 <select onChange="ref()" id="fx">
 <option value="f_normal">Normal</option>
