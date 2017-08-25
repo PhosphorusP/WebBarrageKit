@@ -25,5 +25,9 @@ var s=setInterval("document.getElementById('deleteall').disabled=true;document.g
 <form action="index.php" method="post" id="Index">
 <input type="submit" value="Back to index.php" class="button" id="backtohome">
 </form>
+<?php
+	if($_SERVER['HTTP_REFERER']!='http://.../login.php') header("Location: http://.../");
+?>
+<!--Change "..." into the URL of your website.-->
 </body>
 </html>
