@@ -15,8 +15,8 @@ var s=setInterval("document.getElementById('deleteall').disabled=true;document.g
 <body onLoad="document.getElementById('deleteall').disabled=true;document.getElementById('sure').disabled=false;">
 <h1>Data Visualization</h1>
 <input type="button" onClick="alert('<?php echo file_get_contents("test.txt"); ?>');document.getElementById('deleteall').disabled=true;document.getElementById('sure').disabled=false;" value="Check All Barrages">
-<br />
-<h1>Operation</h1>
+<br>
+<h1>Delete</h1>
 <form action="deleteall.php" method="post" id="deletebarrage">
 <input type="submit" value="Delete All Barrages" class="button" disabled id="deleteall">
 </form>
